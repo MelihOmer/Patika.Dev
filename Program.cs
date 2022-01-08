@@ -1,19 +1,27 @@
 ﻿using System;
 
-namespace Console_Programlama
+namespace Degiskenler
 {
     class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Adınızı Giriniz");
-            string name = Console.ReadLine();
-            Console.Write("Soyadınızı Giriniz");
-            string Soyad = Console.ReadLine();
+            int sayi = 2222222;
 
-            Console.Write("Merhaba " + name +" "+ Soyad);
+
+            DateTime dt=DateTime.Now;
+
+            System.Console.WriteLine(sayi +" "+dt);
+
+            string datetime = DateTime.Now.ToString("dd.MM.yyyy");
+            Console.WriteLine(datetime);
+
+            string datetime1 = DateTime.Now.ToString("dd");
+            System.Console.WriteLine(datetime1);
+
+            string datetime2 =DateTime.Now.ToString("HH:mm");
+            System.Console.WriteLine(datetime2);
 
         }
     }
 }
-
